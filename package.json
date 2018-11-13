@@ -1,22 +1,33 @@
 {
-  "name": "9025-form-validation",
+  "name": "form",
   "version": "1.0.0",
   "description": "Homework for Mobile Computing course at HTL Perg",
   "main": "index.js",
   "scripts": {
     "copy-bootstrap": "cpx ./node_modules/bootstrap/dist/css/bootstrap.css dist/ && cpx ./node_modules/bootstrap/dist/js/bootstrap.js dist/",
     "copy-jquery": "cpx ./node_modules/jquery/dist/jquery.js dist/",
-    "build": "cpx *.{html,css} dist/ && npm run copy-bootstrap && npm run copy-jquery",
+    "build": "cpx *.{html,css} dist/ && npm run copy-bootstrap && npm run copy-jquery && npx tsc --outDir ./dist",
     "start": "browser-sync start -c bs-config.js"
   },
   "author": "Rainer Stropek",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.1.3",
-    "jquery": "^3.3.1"
+    "browser-sync": "^2.26.3",
+    "jquery": "^3.3.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.1.6"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "@types/jquery": "^3.3.22",
     "cpx": "^1.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htl-perg-2018-19-4ahif/form-validation-example-DanielHofer001.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htl-perg-2018-19-4ahif/form-validation-example-DanielHofer001/issues"
+  },
+  "homepage": "https://github.com/htl-perg-2018-19-4ahif/form-validation-example-DanielHofer001#readme"
 }
